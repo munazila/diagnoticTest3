@@ -1,0 +1,32 @@
+/* Warna latar belakang untuk setiap huruf */
+.red-background {
+    background-color: red;
+    color: white;
+}
+
+.green-background {
+    background-color: green;
+    color: white;
+}
+
+.blue-background {
+    background-color: blue;
+    color: white;
+}
+
+/* Style untuk kontainer IGS */
+.igs-container {
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    height: 100vh; /* Tinggi penuh layar */
+}
+
+/* Style untuk item IGS */
+.igs-item {
+    margin: 0 10px;
+    padding: 10px 20px; 
+    border-radius: 5px; /* Membuat sudut sedikit melengkung */
+    font-size: 7rem; /* Ukuran huruf lebih besar */
+    text-align: center;
+}

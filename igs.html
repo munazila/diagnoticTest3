@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Halaman IGS</h1>
+    <div class="igs-container">
+        {% for item in data %}
+            <span class="igs-item {% if item == 'I' %}red-background{% elif item == 'G' %}green-background{% elif item == 'S' %}blue-background{% endif %}">
+                {{ item }}
+            </span>
+        {% endfor %}
+    </div>
+</body>
+</html>
